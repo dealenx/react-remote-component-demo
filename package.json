@@ -4,7 +4,9 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server --mode development",
-    "update-remote": "cp remote-component/dist/main.js public/remote/HelloWorld.js"
+    "cp-hello-world": "cp remote-component/dist/main.js public/remote/HelloWorld.js",
+    "cp-antd-example": "cp remote-component-ant-design/dist/main.js public/remote/AntDesignExample.js",
+    "update-remote": "npm run cp-hello-world && npm run cp-antd-example"
   },
   "dependencies": {
     "@babel/cli": "7.1.0",
